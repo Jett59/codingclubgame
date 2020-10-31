@@ -5,9 +5,9 @@ import javafx.scene.shape.Rectangle;
 
 public class PlatformCreator extends GameListener {
 	public static int MAX_CONCURRENT_PLATFORM_GENERATIONS = 5;
-	public static int platformSpacing = 250;
-	public static double platformWidth = 50;
-	public static double platformHeight = 50;
+	public static int platformSpacing = 750;
+	public static double platformWidth = 500;
+	public static double platformHeight = 12;
 	public static double platformY = 512;
 public PlatformsGameObject platforms;
 private int createdPlatforms = 0;

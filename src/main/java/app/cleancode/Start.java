@@ -4,6 +4,8 @@ import app.cleancode.game.GameListener;
 import app.cleancode.game.GameLoop;
 import app.cleancode.game.GameObject;
 import app.cleancode.game.camera.CameraMovementManager;
+import app.cleancode.game.coin.CoinGameObject;
+import app.cleancode.game.coin.CoinSpawner;
 import app.cleancode.game.floor.FloorCreator;
 import app.cleancode.game.floor.FloorGameObject;
 import app.cleancode.game.physics.AirResistanceManager;
@@ -36,13 +38,15 @@ public class Start extends Application {
 			new TomatoKiller(),
 			new FloorCreator(),
 			new PlatformCreator(),
+			new CoinSpawner(),
 			new GravityManager(),
 			new CameraMovementManager()
 	};
 	private static GameObject[] gameObjects = new GameObject[] {
 			new TomatoGameObject(),
 			new FloorGameObject(),
-			new PlatformsGameObject()
+			new PlatformsGameObject(),
+			new CoinGameObject()
 	};
 public static void main(String[] args) {
 	launch(args);
