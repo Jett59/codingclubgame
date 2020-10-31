@@ -1,0 +1,6 @@
+.panel {
+    -fx-background-color: BLUE;
+}
+.floor {
+    -fx-fill: green;
+}
