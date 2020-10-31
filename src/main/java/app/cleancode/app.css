@@ -1,6 +1,6 @@
-.panel {
-    -fx-background-color: BLUE;
-}
 .floor {
     -fx-fill: green;
+}
+.pointText {
+    -fx-font-size: 72;
 }

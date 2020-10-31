@@ -4,6 +4,7 @@ import app.cleancode.game.GameListener;
 import app.cleancode.game.GameLoop;
 import app.cleancode.game.GameObject;
 import app.cleancode.game.camera.CameraMovementManager;
+import app.cleancode.game.coin.CoinCollector;
 import app.cleancode.game.coin.CoinGameObject;
 import app.cleancode.game.coin.CoinSpawner;
 import app.cleancode.game.floor.FloorCreator;
@@ -18,6 +19,7 @@ import app.cleancode.game.tomato.TomatoKiller;
 import app.cleancode.game.tomato.TomatoLander;
 import app.cleancode.game.tomato.TomatoMovementControler;
 import app.cleancode.game.tomato.TomatoMovementManager;
+import app.cleancode.game.tomato.TomatoPointDisplayer;
 import app.cleancode.game.tomato.TomatoSpawner;
 import javafx.application.Application;
 import javafx.scene.Node;
@@ -36,9 +38,11 @@ public class Start extends Application {
 			new TomatoLander(),
 			new TomatoMovementControler(),
 			new TomatoKiller(),
+			new TomatoPointDisplayer(),
 			new FloorCreator(),
 			new PlatformCreator(),
 			new CoinSpawner(),
+			new CoinCollector(),
 			new GravityManager(),
 			new CameraMovementManager()
 	};

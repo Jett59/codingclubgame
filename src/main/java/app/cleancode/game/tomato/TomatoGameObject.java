@@ -11,6 +11,7 @@ public Sprite sprite;
 public double yVelocity = 0d;
 public double xVelocity = 0;
 public boolean touchingGround = false;
+public int score = 0;
 private SpriteBuilder spriteBuilder;
 public TomatoGameObject(SpriteBuilder spriteBuilder) {
 	this.spriteBuilder = spriteBuilder;
