@@ -6,7 +6,7 @@ import app.cleancode.sprite.SpriteBuilder;
 
 public class TomatoGameObject extends GameObject {
 	public static double TOMATO_HEIGHT = 256;
-	public static double TERMINAL_VELOCITY = Double.MAX_VALUE;
+	public static double TERMINAL_VELOCITY = 100;
 public Sprite sprite;
 public double yVelocity = 0d;
 public double xVelocity = 0;

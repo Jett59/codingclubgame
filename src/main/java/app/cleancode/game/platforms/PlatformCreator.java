@@ -6,6 +6,7 @@ import javafx.scene.shape.Rectangle;
 public class PlatformCreator extends GameListener {
 	public static int MAX_CONCURRENT_PLATFORM_GENERATIONS = 5;
 	public static int platformSpacing = 750;
+	public static int numberOfPlatforms = 100;
 	public static double platformWidth = 500;
 	public static double platformHeight = 12;
 	public static double platformY = 512;
@@ -15,11 +16,15 @@ private int createdPlatforms = 0;
 	@Override
 	public void update() {
 		for(int i = 0; i < MAX_CONCURRENT_PLATFORM_GENERATIONS; i++) {
+			if(createdPlatforms <= numberOfPlatforms) {
 		double x = createdPlatforms*(platformWidth+platformSpacing);
 		Rectangle platform = new Rectangle(x, platformY, platformWidth, platformHeight);
 		platforms.addNode(platform);
 		platforms.platforms.add(platform);
 		createdPlatforms++;
+			}else {
+				break;
+			}
 		}
 	}
 
