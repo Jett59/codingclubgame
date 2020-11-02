@@ -15,7 +15,7 @@ private Camera camera;
 
 	@Override
 	public void update() {
-		camera.setTranslateX(tomato.sprite.getTranslateX()-screenSize.width/2d);
+		camera.setTranslateX(tomato.sprite.getTranslateX()-screenSize.width/2d-tomato.xVelocity);
 	}
 
 	@Override

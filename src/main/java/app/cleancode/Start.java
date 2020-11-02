@@ -6,6 +6,7 @@ import app.cleancode.game.GameObject;
 import app.cleancode.game.camera.CameraMovementManager;
 import app.cleancode.game.coin.CoinCollector;
 import app.cleancode.game.coin.CoinGameObject;
+import app.cleancode.game.coin.CoinRespawner;
 import app.cleancode.game.coin.CoinSpawner;
 import app.cleancode.game.floor.FloorCreator;
 import app.cleancode.game.floor.FloorGameObject;
@@ -42,6 +43,7 @@ public class Start extends Application {
 			new FloorCreator(),
 			new PlatformCreator(),
 			new CoinSpawner(),
+			new CoinRespawner(),
 			new CoinCollector(),
 			new GravityManager(),
 			new CameraMovementManager()

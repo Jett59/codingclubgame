@@ -8,6 +8,7 @@ public class TomatoGameObject extends GameObject {
 	public static double TOMATO_HEIGHT = 256;
 	public static double TERMINAL_VELOCITY = 100;
 public Sprite sprite;
+public boolean dead = false;
 public double yVelocity = 0d;
 public double xVelocity = 0;
 public boolean touchingGround = false;

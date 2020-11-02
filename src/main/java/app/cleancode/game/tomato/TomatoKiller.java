@@ -11,11 +11,16 @@ public TomatoGameObject tomato;
 
 @Override
 public void update() {
-	if(tomato.sprite.getTranslateY()> screenSize.height*1.5d) {
+	if(tomato.dead) {
 		tomato.sprite.setTranslateY(0);
 		tomato.sprite.setTranslateX(0);
 		tomato.xVelocity = 0;
 		tomato.yVelocity = 0;
+		tomato.score = 0;
+		tomato.dead = false;
+	}
+	if(tomato.sprite.getTranslateY()> screenSize.height*1.5d) {
+		tomato.dead = true;
 	}
 }
 
